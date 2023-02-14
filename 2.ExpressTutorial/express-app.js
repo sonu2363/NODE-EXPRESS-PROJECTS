@@ -5,6 +5,9 @@ const app=express()
 
 //setup static and middleware
 app.use(express.static('./public'))
+//In express , express.static() is inbuilt middleware to server static files 
+//but public has to be created and static files should be put into it
+
 
 app.get('/',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./NavBarApp/index.html'))
