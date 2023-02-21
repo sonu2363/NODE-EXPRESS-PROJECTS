@@ -45,7 +45,7 @@ const getAllProducts=async(req,res)=>{
         });
         
     }
-    console.log(queryObject)
+    //console.log(queryObject)
 
     //const products=await ProductMod.find(queryObject)
     //const products=await ProductMod.find({}).sort('name')

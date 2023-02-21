@@ -1,5 +1,5 @@
 require('dotenv').config()
-require('express-async-errors')//this will replace error handling middlewares that
+//require('express-async-errors')//this will replace error handling middlewares that
 // is used in 03.Task API and also acts as a async wrapper used in "Task API"
 const express=require('express')
 const app=express()
