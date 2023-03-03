@@ -7,6 +7,9 @@ const cors=require('cors')
 const xss=require('xss-clean')
 const rateLimiter=require('exress-rate-limit')
 
+//Swagger
+const swaggerUI=require('swagger-ui-express')
+
 
 const express=require('express')
 const app=express()
