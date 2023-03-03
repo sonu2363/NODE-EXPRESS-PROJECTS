@@ -4,14 +4,16 @@ const jwt=require('jsonwebtoken')
 
 const login=async(req,res)=>{
     const {username,password}=req.body
-    
+   // console.log(req.body)
 
     if(!username || !password)
     {
+        console.log('1')
         throw new badRequest('please provide email and password',404)
     }
 //just for demo, normally provided by DB
     const id=new Date().getDate()
+    console.log('2')
 
     //try to keep payload small, better experience for user
     const token=jwt.sign({id,username},process.env.JWT_SECRET,{expiresIn:'30d'})
