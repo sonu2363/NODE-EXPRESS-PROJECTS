@@ -5,10 +5,8 @@ require('express-async-errors')
 const helmet=require('helmet')
 const cors=require('cors')
 const xss=require('xss-clean')
-const rateLimiter=require('exress-rate-limit')
+const rateLimiter=require('express-rate-limit')
 
-//Swagger
-const swaggerUI=require('swagger-ui-express')
 
 
 const express=require('express')
